@@ -1,0 +1,61 @@
+import SectionBlock from './SectionBlock';
+import { ScrollReveal } from './ui/ScrollReveal';
+
+const experiences = [
+  {
+    role: 'FRONTEND Developer (Freelance)',
+    company: 'AOTMS LMS PORTAL',
+    period: '[08FEB 2026 – 28APR 2026]',
+    description:
+      '🚀 Freelance Project – Successfully delivered an end-to-end, enterprise-grade Learning Management System. Built using React, TypeScript, Node.js, Express, and MongoDB. Key learnings: ✦ Architecting scalable solutions ✦ Advanced state management ✦ Meeting complex client expectations.',
+  },
+  {
+    role: 'MERN Stack Developer (Freelance)',
+    company: 'Academy of Tech Masters (AOTMS)',
+    period: '[23DEC 2025 – 23JAN 2026]',
+    description:
+      '🚀Freelance Project – Successfully Delivered Completed a real-world client project with my team using [Tech Stack – e.g., React, Node.js, MongoDB]. Key learnings: ✦ Building scalable features ✦ Team collaboration & Git workflows ✦ Meeting client expectations & deadlines.',
+  },
+  {
+    role: 'Generative AI & Prompt Engineering Intern',
+    company: 'Blackbuck Engineers',
+    period: '[MAY 2025 – JUL 2025]',
+    description:
+      'Completed a 120-hour Short-Term Internship program focusing on ChatGPT, Prompt Engineering, and Generative AI. Developed expertise in designing structured prompt templates, leveraging Large Language Models, and integrating Generative AI workflows into application development.',
+  },
+];
+
+const ExperienceSection = () => (
+  <SectionBlock id="experience" title="Experience">
+    <ScrollReveal animation="stagger-fade-up" className="space-y-12">
+      {experiences.map((exp) => (
+        <div
+          key={exp.role}
+          className="relative pl-8 md:pl-0 border-l md:border-l-0 border-black/20 md:grid md:grid-cols-[1fr_2fr] md:gap-8 pb-12 last:pb-0"
+        >
+          <div className="md:text-right md:pr-8 md:border-r border-black/20 relative">
+            <div className="hidden md:block absolute top-1 -right-[5px] w-[9px] h-[9px] rounded-none bg-black"></div>
+            <div className="md:hidden absolute top-1 -left-[5px] w-[9px] h-[9px] rounded-none bg-black"></div>
+
+            <h4 className="font-mono text-xs tracking-widest text-foreground/60 uppercase mb-1">
+              {exp.period}
+            </h4>
+            <h3 className="font-bold text-base md:text-lg">{exp.company}</h3>
+          </div>
+
+          <div className="mt-2 md:mt-0">
+            <h3 className="text-base font-bold text-foreground md:hidden mb-2">
+              {exp.role}
+            </h3>
+            <h3 className="text-lg font-bold text-foreground hidden md:block mb-3">
+              {exp.role}
+            </h3>
+            <p className="body-text text-sm">{exp.description}</p>
+          </div>
+        </div>
+      ))}
+    </ScrollReveal>
+  </SectionBlock>
+);
+
+export default ExperienceSection;
