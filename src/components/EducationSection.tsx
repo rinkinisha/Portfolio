@@ -9,28 +9,18 @@ interface EducationItem {
 
 const education: EducationItem[] = [
   {
-    degree:
-      'Master of Computer Applications (MCA), DVR & Dr. HS MIC College of Technology (Autonomous),Kanchikacherla',
-    school:
-      'Affiliated to Jawaharlal Nehru Technological University Kakinada (JNTUK)',
-    year: '2024 – 2026(Pursuing)',
+    degree: 'Certificate Course in Web Development',
+    school: 'NavGurukul Foundation Social Welfare, Kishanganj - Bihar',
+    year: 'June 2024 – Oct 2025',
     description: [
       'Completed industry-focused training in Full Stack Web Development, covering React.js, Node.js, Express.js , MongoDB, and RESTful APIs.',
-      'Acquired practical knowledge of Java Programming, Object-Oriented Programming (OOP), and Data Structures.',
-      'Strengthened skills in Database Management Systems (DBMS), SQL query optimization, and database design.',
       'Gained hands-on experience in Web Technologies including HTML5, CSS3, JavaScript, and responsive design principles.',
     ],
   },
   {
-    degree:
-      'Bachelor of Science (B.Sc. – Mathematics, Statistics & Computer Science),Gowtham Degree College,Vijayawada',
-    school: 'Affiliated to Krishna University',
-    year: '2021 – 2024',
-    description: [
-      'Built a strong foundation in Computer Science, programming, database management, and problem-solving.',
-      'Developed analytical and quantitative skills through Mathematics and Statistics.',
-      'Gained knowledge of software development concepts, data analysis, and computational thinking.',
-    ],
+    degree: 'Bachelor of Arts',
+    school: 'Purnia University, Purnia - Bihar',
+    year: '2020 – 2023',
   },
 ];
 
