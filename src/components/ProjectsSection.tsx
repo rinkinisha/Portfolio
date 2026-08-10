@@ -50,7 +50,7 @@ const projects: Project[] = [
     ],
     categories: ['ai', 'web'],
     githubUrl:
-      'https://github.com/VARA4u-tech/AI_Meeting_Summerizer_Task_Manager',
+      'https://github.com/rinkinisha/AI_Meeting_Summerizer_Task_Manager',
   },
   {
     title: 'AOTMS LMS PORTAL',
@@ -70,7 +70,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['web'],
-    githubUrl: 'https://github.com/VARA4u-tech/AOTMS-LMS-PORTAL',
+    githubUrl: 'https://github.com/rinkinisha/AOTMS-LMS-PORTAL',
     liveUrl: 'https://www.aotms.com',
   },
   {
@@ -91,7 +91,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/MAIL-MIND-AI',
+    githubUrl: 'https://github.com/rinkinisha/MAIL-MIND-AI',
     liveUrl: 'https://mail-mind-ai-xi.vercel.app/',
   },
   {
@@ -110,7 +110,7 @@ const projects: Project[] = [
       'AI',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/Vidyalaya',
+    githubUrl: 'https://github.com/rinkinisha/Vidyalaya',
     liveUrl: 'https://vidyalaya-nine.vercel.app',
   },
   {
@@ -130,7 +130,7 @@ const projects: Project[] = [
       'Agile',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/-LOGICIA_Your_AI_Logic_Brain_',
+    githubUrl: 'https://github.com/rinkinisha/-LOGICIA_Your_AI_Logic_Brain_',
     liveUrl: 'https://logicia-your-ai-logic-brain.vercel.app',
   },
   {
@@ -153,7 +153,7 @@ const projects: Project[] = [
     ],
     categories: ['ecommerce', 'web', 'ai'],
     githubUrl:
-      'https://github.com/VARA4u-tech/Lakshmi-Fashion-Designers-E-Commerce-Website',
+      'https://github.com/rinkinisha/Lakshmi-Fashion-Designers-E-Commerce-Website',
     liveUrl: 'https://lakshmi-fashion-designers.vercel.app',
   },
   {
@@ -172,7 +172,7 @@ const projects: Project[] = [
       'LLM',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/AI-VoiceControlled-PDF-Editor',
+    githubUrl: 'https://github.com/rinkinisha/AI-VoiceControlled-PDF-Editor',
     liveUrl: 'https://ai-voice-controlled-pdf-editor.vercel.app',
   },
   {
@@ -190,7 +190,7 @@ const projects: Project[] = [
     ],
     categories: ['web', 'ai'],
     githubUrl:
-      'https://github.com/VARA4u-tech/safe-trip-smart-driving-safety-application',
+      'https://github.com/rinkinisha/safe-trip-smart-driving-safety-application',
     liveUrl: 'https://safe-trip-smart-driving-safety-appl.vercel.app',
   },
   {
@@ -208,7 +208,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['web'],
-    githubUrl: 'https://github.com/VARA4u-tech/AOTMS',
+    githubUrl: 'https://github.com/rinkinisha/AOTMS',
     liveUrl: 'https://www.aotms.in/',
   },
   {
@@ -220,7 +220,7 @@ const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Shadcn UI', 'Vitest'],
     categories: ['ecommerce', 'web'],
     githubUrl:
-      'https://github.com/VARA4u-tech/Elara-Cosmetics-E--Commerce-Website-',
+      'https://github.com/rinkinisha/Elara-Cosmetics-E--Commerce-Website-',
     liveUrl: 'https://elara-cosmetics.vercel.app/',
   },
   {
@@ -237,7 +237,7 @@ const projects: Project[] = [
       'Framer Motion',
     ],
     categories: ['ai', 'web'],
-    githubUrl: 'https://github.com/VARA4u-tech/EduPredict',
+    githubUrl: 'https://github.com/rinkinisha/EduPredict',
     liveUrl: 'https://edu-pridect.vercel.app/',
   },
   {
@@ -247,8 +247,8 @@ const projects: Project[] = [
       'Gamified task manager featuring a reactive duck mascot that tracks your productivity progress.',
     tags: ['Flutter', 'Riverpod', 'Firebase', 'Hive', 'Dart'],
     categories: ['mobile'],
-    githubUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
-    liveUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
+    githubUrl: 'https://github.com/rinkinisha/my-first-flutter-app',
+    liveUrl: 'https://github.com/rinkinisha/my-first-flutter-app',
   },
 ];
 
@@ -397,7 +397,7 @@ const ProjectsSection = () => {
       {/* ── GitHub Link ── */}
       <div className="mt-8">
         <a
-          href="https://github.com/VARA4u-tech"
+          href="https://github.com/rinkinisha"
           target="_blank"
           rel="noopener noreferrer"
           onClick={playClick}

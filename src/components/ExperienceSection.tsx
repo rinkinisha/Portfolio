@@ -3,25 +3,42 @@ import { ScrollReveal } from './ui/ScrollReveal';
 
 const experiences = [
   {
-    role: 'FRONTEND Developer (Freelance)',
-    company: 'AOTMS LMS PORTAL',
-    period: '[08FEB 2026 – 28APR 2026]',
-    description:
-      '🚀 Freelance Project – Successfully delivered an end-to-end, enterprise-grade Learning Management System. Built using React, TypeScript, Node.js, Express, and MongoDB. Key learnings: ✦ Architecting scalable solutions ✦ Advanced state management ✦ Meeting complex client expectations.',
-  },
-  {
-    role: 'MERN Stack Developer (Freelance)',
-    company: 'Academy of Tech Masters (AOTMS)',
-    period: '[23DEC 2025 – 23JAN 2026]',
-    description:
-      '🚀Freelance Project – Successfully Delivered Completed a real-world client project with my team using [Tech Stack – e.g., React, Node.js, MongoDB]. Key learnings: ✦ Building scalable features ✦ Team collaboration & Git workflows ✦ Meeting client expectations & deadlines.',
-  },
-  {
-    role: 'Generative AI & Prompt Engineering Intern',
-    company: 'Blackbuck Engineers',
-    period: '[MAY 2025 – JUL 2025]',
-    description:
-      'Completed a 120-hour Short-Term Internship program focusing on ChatGPT, Prompt Engineering, and Generative AI. Developed expertise in designing structured prompt templates, leveraging Large Language Models, and integrating Generative AI workflows into application development.',
+    role: 'Academic Associate Intern → Academic Associate',
+    company: 'NavGurukul',
+    period: '[OCT 2025 – PRESENT]',
+    description: (
+      <div className="space-y-4">
+        <p>
+          Started as an <strong>Academic Associate Intern</strong> and transitioned into a <strong>full-time Academic Associate</strong> role, supporting students in their journey toward becoming full-stack developers.
+        </p>
+        
+        <div>
+          <h4 className="font-bold mb-2">Key Contributions & Learnings:</h4>
+          <ul className="space-y-2 list-none">
+            <li>✦ Guided students in building <strong>full-stack projects</strong>, helping them understand both frontend and backend development.</li>
+            <li>✦ Taught and supported students in <strong>JavaScript, React, Node.js, Express, MongoDB, REST APIs, and Git</strong>.</li>
+            <li>✦ Helped students <strong>debug code, identify errors, and develop structured problem-solving approaches</strong> instead of relying on ready-made solutions.</li>
+            <li>✦ Conducted technical sessions, practical activities, and hands-on learning around <strong>web development and programming concepts</strong>.</li>
+            <li>✦ Supported students in understanding concepts such as <strong>CRUD operations, APIs, databases, authentication, and backend development</strong>.</li>
+            <li>✦ Reviewed student projects and provided <strong>technical feedback and guidance</strong> to improve code quality and project implementation.</li>
+            <li>✦ Designed learning activities, practical tasks, and revision exercises to make technical concepts more <strong>interactive and application-oriented</strong>.</li>
+            <li>✦ Worked closely with students to track their learning progress, identify knowledge gaps, and provide targeted support.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-bold mb-2">Key Learnings:</h4>
+          <ul className="space-y-1 list-none">
+            <li>✦ Full-stack Web Development</li>
+            <li>✦ Debugging & Problem Solving</li>
+            <li>✦ Technical Mentoring & Communication</li>
+            <li>✦ Project-Based Learning</li>
+            <li>✦ Curriculum & Learning Activity Design</li>
+            <li>✦ Git & Collaborative Development</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
 ];
 
@@ -50,7 +67,7 @@ const ExperienceSection = () => (
             <h3 className="text-lg font-bold text-foreground hidden md:block mb-3">
               {exp.role}
             </h3>
-            <p className="body-text text-sm">{exp.description}</p>
+            <div className="body-text text-sm">{exp.description}</div>
           </div>
         </div>
       ))}

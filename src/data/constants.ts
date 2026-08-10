@@ -7,7 +7,7 @@ export const PROFILE = {
   shortName: 'Rinki',
   alias: 'Rinki',
   title: 'Full Stack Developer',
-  email: 'rinkinisha24@navgurukul.org',
+  email: 'rinki.nisha02@gmail.com',
   phone: '7654164893',
   formspreeId: '', // Set your Formspree Form ID here to enable emails (or configure via VITE_FORMSPREE_ID in .env)
 } as const;
@@ -26,7 +26,7 @@ export const SOCIAL_LINKS = [
   {
     id: 'email',
     label: 'Email',
-    href: 'mailto:rinkinisha24@navgurukul.org',
+    href: 'mailto:rinki.nisha02@gmail.com',
   },
 ] as const;
 

@@ -21,8 +21,10 @@ import ResumeModal from './ResumeModal';
 const roles = [
   'Vibe Coder',
   'React Engineer',
-  'Blockchain Builder',
   'Full-Stack Creator',
+  'Learner',
+  'Coding Enthusiast',
+  'Communicator'
 ];
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {

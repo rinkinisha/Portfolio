@@ -7,6 +7,7 @@ import { Wrench } from 'lucide-react';
 import { Zap } from 'lucide-react';
 import { Layers } from 'lucide-react';
 import { Box } from 'lucide-react';
+import { Users } from 'lucide-react';
 import SectionBlock from './SectionBlock';
 import GithubGraph from './GithubGraph';
 import { playHover } from '@/hooks/useSoundEffects';
@@ -21,22 +22,9 @@ const skillCategories = [
       'TypeScript',
       'JavaScript',
       'Tailwind CSS',
-      'Zustand',
       'TanStack Query',
       'Framer Motion',
-      'Shadcn UI',
       'Vite',
-    ],
-  },
-  {
-    title: 'Mobile Engineering',
-    icon: <Smartphone className="w-5 h-5" />,
-    color: 'bg-green-50',
-    skills: [
-      'Riverpod',
-      'Material Design',
-      'Mobile UI/UX',
-      'Native Integration',
     ],
   },
   {
@@ -47,23 +35,18 @@ const skillCategories = [
       'Node.js',
       'Firebase',
       'MongoDB',
-      'Hive',
       'REST APIs',
-      'PostgreSQL',
-      'Auth Systems',
+      'Express.js'
     ],
   },
   {
-    title: 'Web3 & Intelligence',
+    title: 'Intelligence',
     icon: <Cpu className="w-5 h-5" />,
     color: 'bg-purple-50',
     skills: [
-      'Aptos',
-      'Move Lang',
       'AI Integration',
       'Prompt Engineering',
       'Smart Contracts',
-      'Web3.js',
     ],
   },
   {
@@ -79,13 +62,30 @@ const skillCategories = [
       'Docker',
       'Postman',
       'Linux CLI',
+      'Netlify'
+    ],
+  },
+  {
+    title: 'Professional Skills',
+    icon: <Users className="w-5 h-5" />,
+    color: 'bg-blue-50',
+    skills: [
+      'Problem Solving',
+      'Debugging',
+      'Communication',
+      'Mentoring',
+      'Team Collaboration',
+      'Critical Thinking',
+      'Adaptability',
+      'Time Management',
+      'Leadership'
     ],
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <SectionBlock id="skills" title="Technical Arsenal">
+    <SectionBlock id="skills" title="Skills & Expertise">
       <div className="flex flex-col gap-12">
         {/* Skill Modules */}
         <ScrollReveal
