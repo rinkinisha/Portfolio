@@ -44,9 +44,7 @@ graph TD
     Frontend -->|Animation| Motion[Framer Motion Engine]
 
     Components -->|Showcases| ProjectHub{Project Hub}
-    ProjectHub -->|Vidyalaya| AIStudy[AI-Powered Study Platform]
-    ProjectHub -->|MailMind| AIEmail[AI Email Assistant]
-    ProjectHub -->|Logicia| AITutor[AI Logic Tutor]
+    ProjectHub -->|Revision OS| AISystem[AI-Powered Learning Platform]
 
     Frontend -->|Integrations| GitHub[GitHub API]
     Frontend -->|Communication| Formspree[Formspree API]
@@ -54,8 +52,7 @@ graph TD
     subgraph "External Modules"
         GitHub
         Formspree
-        AIStudy
-        AIEmail
+        AISystem
     end
 ```
 
@@ -236,7 +233,7 @@ src/
 ## 🏆 Achievements
 
 - **Freelance Excellence**: Successfully delivered a full-stack client project for the Academy of Tech Masters (AOTMS).
-- **Project Scale**: 11+ Production-ready applications showcased, ranging from AI Emailers to E-Commerce portals.
+- **Project Scale**: Production-ready applications showcased, focusing on high-impact AI systems like Revision OS.
 - **UX Innovation**: Engineered a split-zone cursor-intelligence system for project cards — a pattern not commonly found in developer portfolios.
 
 ---
