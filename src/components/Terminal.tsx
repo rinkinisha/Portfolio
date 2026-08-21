@@ -153,6 +153,12 @@ const Terminal = () => {
               <a href="#projects" className="text-blue-400 hover:underline">
                 1. Revision OS — AI-Powered Learning Platform (LATEST)
               </a>
+              <a href="#projects" className="text-blue-400 hover:underline">
+                2. Explore Bihar — Tourism Website
+              </a>
+              <a href="#projects" className="text-blue-400 hover:underline">
+                3. Memory Match Game
+              </a>
             </div>
           );
         case 'contact':

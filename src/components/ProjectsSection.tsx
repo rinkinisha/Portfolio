@@ -50,6 +50,33 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/rinkinisha/RevisionGameV2_frontend',
     liveUrl: 'https://revision-game-v2-frontend.vercel.app',
   },
+  {
+    title: 'Explore Bihar — Tourism Website',
+    tagline: 'Interactive Tourism Website',
+    description:
+      'Developed a responsive tourism website showcasing Bihar\'s destinations and attractions. Built structured pages for destinations, home, and contact using semantic HTML and CSS. Added interactive functionality using JavaScript and organized frontend assets. Focused on responsive layouts and user-friendly navigation.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Semantic HTML'],
+    categories: ['web'],
+    githubUrl: 'https://github.com/rinkinisha/ExploreBihar',
+    liveUrl: 'https://explore-bihar.netlify.app',
+  },
+  {
+    title: 'Memory Match Game',
+    tagline: 'Interactive Browser-Based Game',
+    description:
+      'Engineered a high-performance, interactive browser-based memory card game utilizing vanilla JavaScript, HTML5, and CSS3. Designed and implemented custom 3D card-flip animations with hardware-accelerated CSS transforms. Developed an offline leaderboard and ranking system using LocalStorage for persistent data storage. Optimized game state transitions, timer accuracy, and event delegation to ensure seamless, zero-latency user interactions. Standardized layouts for responsive design to deliver an immersive gameplay experience across mobile and desktop devices.',
+    tags: [
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'LocalStorage',
+      'CSS Animations',
+      'DOM Manipulation',
+    ],
+    categories: ['web'],
+    githubUrl: 'https://github.com/rinkinisha/MemoryMatchGame',
+    liveUrl: 'https://rad-brigadeiros-f691e1.netlify.app/',
+  },
 ];
 
 

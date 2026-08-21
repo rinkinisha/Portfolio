@@ -45,6 +45,8 @@ graph TD
 
     Components -->|Showcases| ProjectHub{Project Hub}
     ProjectHub -->|Revision OS| AISystem[AI-Powered Learning Platform]
+    ProjectHub -->|Explore Bihar| WebSystem[Tourism Website]
+    ProjectHub -->|Memory Match Game| GameSystem[Interactive Browser Game]
 
     Frontend -->|Integrations| GitHub[GitHub API]
     Frontend -->|Communication| Formspree[Formspree API]
@@ -88,7 +90,7 @@ The project was developed using a disciplined **Agile (Scrum)** approach:
 | **Split-Zone Project Cards** | Cards are divided into two intelligent click zones                   | `mousemove` delta math determines zone in real time. Clicking navigates to the correct URL. A subtle half-tint gradient + vertical divider line reinforce the split without covering content.                                               |
 | **Mobile Touch Actions**     | WCAG 2.5.5-compliant touch-optimised fallback buttons                | 48px min-height, `active:` press-down animation (`translate(2px,2px) scale(0.97)` + shadow collapse), `-webkit-tap-highlight-color: transparent`.                                                                                           |
 | **Interactive Terminal**     | CLI-based profile navigation                                         | A command parser supporting `help`, `about`, `projects`, and `clear`.                                                                                                                                                                       |
-| **Project Showcase**         | Dynamic filtering of 11 projects                                     | Neo-Brutalist cards with 3D-shadow hover effects and category badges. Tags capped at 5 on phones, 8 on larger screens.                                                                                                                      |
+| **Project Showcase**         | Dynamic filtering of projects                                        | Neo-Brutalist cards with 3D-shadow hover effects and category badges. Tags capped at 5 on phones, 8 on larger screens.                                                                                                                      |
 | **GitHub Integration**       | Real-time activity visualization                                     | Uses `react-github-calendar` to demonstrate consistency and commitment.                                                                                                                                                                     |
 | **Sound System**             | Haptic-like audio feedback                                           | Custom `useSoundEffects` hook for premium click and hover interactions.                                                                                                                                                                     |
 | **Pixel Particle Assembly**  | Hero name assembled from scattered edge particles on desktop         | 90-particle Canvas API animation with easeOutQuart interpolation. Skipped on mobile — replaced with smooth fade + scramble text.                                                                                                            |
@@ -233,13 +235,13 @@ src/
 ## 🏆 Achievements
 
 - **Freelance Excellence**: Successfully delivered a full-stack client project for the Academy of Tech Masters (AOTMS).
-- **Project Scale**: Production-ready applications showcased, focusing on high-impact AI systems like Revision OS.
+- **Project Scale**: Production-ready applications showcased, focusing on high-impact projects like Revision OS, Explore Bihar, and Memory Match Game.
 - **UX Innovation**: Engineered a split-zone cursor-intelligence system for project cards — a pattern not commonly found in developer portfolios.
 
 ---
 
 <div align="center">
   <h3><b>Let's Build Something Exceptional Together.</b></h3>
-  <p>durgavaraprasadpappuri13@gmail.com</p>
+  <p>rinki.nisha02@gmail.com</p>
     <p>© 2026 Rinki Nisha. Built with 🤍 and Coffee.</p>
 </div>
