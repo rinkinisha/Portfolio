@@ -13,29 +13,12 @@ const experiences = [
         </p>
         
         <div>
-          <h4 className="font-bold mb-2">Key Contributions & Learnings:</h4>
+          <h4 className="font-bold mb-2">Key Contributions</h4>
           <ul className="space-y-2 list-none">
-            <li>✦ Guided students in building <strong>full-stack projects</strong>, helping them understand both frontend and backend development.</li>
-            <li>✦ Taught and supported students in <strong>JavaScript, React, Node.js, Express, MongoDB, REST APIs, and Git</strong>.</li>
-            <li>✦ Helped students <strong>debug code, identify errors, and develop structured problem-solving approaches</strong> instead of relying on ready-made solutions.</li>
-            <li>✦ Conducted technical sessions, practical activities, and hands-on learning around <strong>web development and programming concepts</strong>.</li>
-            <li>✦ Supported students in understanding concepts such as <strong>CRUD operations, APIs, databases, authentication, and backend development</strong>.</li>
-            <li>✦ Reviewed student projects and provided <strong>technical feedback and guidance</strong> to improve code quality and project implementation.</li>
-            <li>✦ Designed learning activities, practical tasks, and revision exercises to make technical concepts more <strong>interactive and application-oriented</strong>.</li>
-            <li>✦ Worked closely with students to track their learning progress, identify knowledge gaps, and provide targeted support.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold mb-2">Key Learnings:</h4>
-          <ul className="space-y-1 list-none">
-            <li>✦ Full-stack Web Development</li>
-            <li>✦ Debugging & Problem Solving</li>
-            <li>✦ Technical Mentoring & Communication</li>
-            <li>✦ Project-Based Learning</li>
-            <li>✦ Curriculum & Learning Activity Design</li>
-            <li>✦ Git & Collaborative Development</li>
-          </ul>
+            <li>✦ Mentored students in <strong>full-stack web development</strong> through hands-on projects using JavaScript, React, Node.js, Express, MongoDB, REST APIs, and Git.</li>
+<li>✦ Guided students in <strong>debugging, problem-solving, and writing structured, maintainable code</strong> instead of relying on ready-made solutions.</li>
+<li>✦ Reviewed projects, identified <strong>learning gaps</strong>, and provided technical feedback while designing application-oriented activities to strengthen students' development skills.</li>
+            </ul>
         </div>
       </div>
     ),

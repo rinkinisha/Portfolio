@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 import { PROFILE, SOCIAL_LINKS } from '@/data/constants';
+import { getGoogleDriveDownloadUrl } from '@/lib/utils';
 import { gsap } from '@/lib/gsap';
 import { useGSAPContext } from '@/hooks/useGSAPContext';
 import ResumeModal from './ResumeModal';
@@ -21,10 +22,11 @@ import ResumeModal from './ResumeModal';
 const roles = [
   'Vibe Coder',
   'React Engineer',
-  'Full-Stack Creator',
+  'Full-Stack Developer',
   'Learner',
   'Coding Enthusiast',
-  'Communicator'
+  'Communicator',
+  'Mentor',
 ];
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -576,7 +578,7 @@ const HeroSection = () => {
 
         {/* Tech tags */}
         <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
-          {['Flutter', 'React', 'TypeScript', 'Firebase', 'AI', 'Node.js'].map(
+          {['React', 'TypeScript', 'AI Integration', 'Node.js', 'JavaScript', 'Prompt Engineering', 'GitHub', 'Express.js' ].map(
             (tech) => (
               <span
                 key={tech}
@@ -633,8 +635,10 @@ const HeroSection = () => {
           {/* Secondary: Direct Download */}
           <Magnetic strength={0.1}>
             <a
-              href="/resume.pdf"
+              href={getGoogleDriveDownloadUrl(PROFILE.resumeUrl)}
               download="Rinki_Nisha_Resume.pdf"
+              target={PROFILE.resumeUrl.includes('drive.google.com') ? '_blank' : undefined}
+              rel={PROFILE.resumeUrl.includes('drive.google.com') ? 'noopener noreferrer' : undefined}
               onClick={playClick}
               aria-label="Download resume as PDF"
               className="group relative inline-flex items-center gap-2 px-6 py-4 border-2 border-black bg-white text-black text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] rounded-none"
@@ -650,7 +654,7 @@ const HeroSection = () => {
       <ResumeModal
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
-        resumeUrl="/resume.pdf"
+        resumeUrl={PROFILE.resumeUrl}
         downloadName="Rinki_Nisha_Resume.pdf"
       />
 
@@ -665,7 +669,7 @@ const HeroSection = () => {
       <div className="gsap-corner absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
           <p>const experience = "1+ years";</p>
-          <p>const projects = 11;</p>
+          <p>const projects = 4+;</p>
           <p>const passion = Infinity;</p>
         </div>
       </div>

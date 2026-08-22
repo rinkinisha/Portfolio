@@ -9,7 +9,9 @@ export const PROFILE = {
   title: 'Full Stack Developer',
   email: 'rinki.nisha02@gmail.com',
   phone: '7654164893',
+  website: 'rinkinisha.github.io',
   formspreeId: '', // Set your Formspree Form ID here to enable emails (or configure via VITE_FORMSPREE_ID in .env)
+  resumeUrl: 'https://drive.google.com/file/d/1QO_Wkqe4m6OP9UlC7qAuwtFBxy8EbH8z/view?usp=sharing',
 } as const;
 
 export const SOCIAL_LINKS = [

@@ -35,7 +35,7 @@ const AboutSection = () => {
               <span className="text-black/50 flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5" /> LOC:
               </span>
-              <span className="font-bold">INDIA[Himachal Pradesh]-(IST)</span>
+              <span className="font-bold">INDIA[Himachal Pradesh]</span>
             </div>
             <div className="flex justify-between">
               <span className="text-black/50 flex items-center gap-1">
@@ -57,22 +57,13 @@ const AboutSection = () => {
         <div className="flex-1 w-full">
           <ScrollReveal animation="stagger-fade-up" className="space-y-6">
             <p className="body-text max-w-3xl">
-              I'm a passionate developer with a deep interest in building clean,
-              performant, and user-centric digital experiences. I believe in the
-              power of minimal design and well-crafted code to communicate ideas
-              effectively.
+              I'm a Web Developer focused on building responsive, scalable, and user-centric web applications. I work primarily with JavaScript, React, and modern web technologies to create intuitive interfaces and seamless digital experiences.
             </p>
             <p className="body-text max-w-3xl">
-              With experience across mobile and web platforms, I bring a unique
-              perspective to every project — blending technical rigor with
-              creative sensibility.
+              I also work with backend technologies and REST APIs, allowing me to build applications across the full development cycle — from designing interactive frontends to integrating reliable backend services.
             </p>
             <p className="body-text max-w-3xl">
-              I focus on writing well-structured, maintainable code that aligns
-              with modern industry standards. By leveraging contemporary
-              development workflows and robust toolings, I efficiently translate
-              ideas into production-ready software while maintaining clean,
-              scalable, and modular architectures.
+              I care about writing clean, maintainable, and modular code while following modern development practices. I enjoy solving real-world problems, learning new technologies, and turning ideas into practical, production-ready web experiences.
             </p>
           </ScrollReveal>
 
@@ -89,7 +80,7 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="border-2 border-black bg-white p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all duration-200 rounded-none">
-              <div className="font-mono text-3xl font-black">11+</div>
+              <div className="font-mono text-3xl font-black">4+</div>
               <div className="font-mono text-[10px] uppercase tracking-wider text-black/50 mt-1">
                 Projects Completed
               </div>

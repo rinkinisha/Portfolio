@@ -129,21 +129,32 @@ const Terminal = () => {
         case 'cat readme.md':
           return "Rinki Nisha's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
         case 'cat experience.txt':
-          return 'Freelance Developer @ AOTMS. Built scalable transport systems and loved every second of it.';
+          return 'Academic Associate @ NavGurukul. Mentoring students in full-stack web development (React, Node.js, Express, MongoDB).';
         case 'cat education.txt':
-          return 'Currently exploring the depths of CSE, specializing in Blockchain and AI.';
+          return 'Completed Certificate Course in Web Development at NavGurukul (2024 - 2025) and holds a Bachelor of Arts from Purnia University (2020 - 2023).';
         case 'cat roadmap.sh':
-          return 'Next up: Master Aptos Move, scale AI Voice Editor, and keep vibe coding.';
+          return 'Next up: Master advanced system design, expand AI integrations in learning platforms, and continue mentoring the next generation of web developers.';
         case 'about':
-          return `I'm ${PROFILE.name}, a passionate developer specializing in Flutter, React, and Blockchain technologies. I love building modern, high-performance applications.`;
+          return `I'm ${PROFILE.name}, a passionate developer specializing in Flutter, React, and Full-Stack web development. I love building modern, high-performance applications.`;
         case 'skills':
           return (
-            <div>
-              <p className="mb-1 text-yellow-400">CORE STACK:</p>
-              <p>• Supabase / Framer Motion</p>
-              <p>• React / TypeScript</p>
-              <p>• Firebase / Node.js</p>
-              <p>• Blockchain (Aptos/Move)</p>
+            <div className="flex flex-col gap-2 text-xs md:text-sm">
+              <p className="mb-1 text-yellow-400 font-bold uppercase tracking-wide">// CORE TECH STACK & EXPERTISE</p>
+              <div>
+                <span className="text-green-400 font-bold">Frontend:</span> React, TypeScript, JavaScript, Tailwind CSS, Framer Motion
+              </div>
+              <div>
+                <span className="text-green-400 font-bold">Backend & DB:</span> Node.js, Express.js, Firebase, MongoDB, REST APIs
+              </div>
+              <div>
+                <span className="text-green-400 font-bold">Intelligence & Web3:</span> AI Integration, Prompt Engineering
+              </div>
+              <div>
+                <span className="text-green-400 font-bold">Tools & Devops:</span> Git, GitHub, Figma, Docker, Postman, Linux CLI, Vercel, Netlify
+              </div>
+              <div>
+                <span className="text-green-400 font-bold">Professional:</span> Problem Solving, Debugging, Team Collaboration, Communication
+              </div>
             </div>
           );
         case 'projects':
@@ -222,6 +233,16 @@ const Terminal = () => {
       // Skills
       if (lower.match(/(skill|stack|tech|language|framework)/)) {
         return getCommandResponse('skills');
+      }
+
+      // Experience
+      if (lower.match(/(experience|job|work history|where did you work)/)) {
+        return getCommandResponse('cat experience.txt');
+      }
+
+      // Education
+      if (lower.match(/(education|school|college|degree|study)/)) {
+        return getCommandResponse('cat education.txt');
       }
 
       // Projects
@@ -502,9 +523,8 @@ const Terminal = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div
-        className={`bg-[#0c0c0c] border border-white/30 shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8),0_12px_24px_-12px_rgba(255,255,255,0.2),12px_12px_0px_0px_rgba(255,255,255,0.05)] w-full transition-all duration-700 flex flex-col font-mono text-sm md:text-base selection:bg-white/20 active:border-white/40 rounded-none overflow-hidden ${
-          isMaximized ? 'h-[95vh] w-[95vw]' : 'max-w-2xl h-[600px]'
-        }`}
+        className={`bg-[#0c0c0c] border border-white/30 shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8),0_12px_24px_-12px_rgba(255,255,255,0.2),12px_12px_0px_0px_rgba(255,255,255,0.05)] w-full transition-all duration-700 flex flex-col font-mono text-sm md:text-base selection:bg-white/20 active:border-white/40 rounded-none overflow-hidden ${isMaximized ? 'h-[95vh] w-[95vw]' : 'max-w-2xl h-[600px]'
+          }`}
         style={{
           transform: isMaximized
             ? 'none'
@@ -512,6 +532,9 @@ const Terminal = () => {
           transformStyle: 'preserve-3d',
         }}
         onClick={(e) => e.stopPropagation()}
+        onTouchStart={(e) => e.stopPropagation()}
+        onTouchMove={(e) => e.stopPropagation()}
+        onTouchEnd={(e) => e.stopPropagation()}
       >
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-transparent opacity-50 z-0" />
         {/* Drag indicator for mobile */}
@@ -567,6 +590,7 @@ const Terminal = () => {
 
         {/* content */}
         <div
+          data-lenis-prevent
           className={`flex-1 overflow-y-auto p-4 selection:bg-white/20 terminal-scrollbar ${terminalTheme}`}
           ref={scrollRef}
           onClick={handleTerminalClick}

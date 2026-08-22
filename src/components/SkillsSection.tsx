@@ -22,9 +22,10 @@ const skillCategories = [
       'TypeScript',
       'JavaScript',
       'Tailwind CSS',
-      'TanStack Query',
       'Framer Motion',
       'Vite',
+      'HTML',
+      'CSS', 
     ],
   },
   {
@@ -46,7 +47,6 @@ const skillCategories = [
     skills: [
       'AI Integration',
       'Prompt Engineering',
-      'Smart Contracts',
     ],
   },
   {

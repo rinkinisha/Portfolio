@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
-type FilterKey = 'all' | 'ai' | 'web' | 'mobile' | 'ecommerce';
+type FilterKey = 'all' | 'ai' | 'web' | 'ecommerce';
 
 interface Project {
   title: string;
@@ -25,7 +25,6 @@ const FILTERS: { key: FilterKey; label: string }[] = [
   { key: 'all', label: 'All' },
   { key: 'ai', label: 'AI' },
   { key: 'web', label: 'Web' },
-  { key: 'mobile', label: 'Mobile' },
   { key: 'ecommerce', label: 'E-Commerce' },
 ];
 

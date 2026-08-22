@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { playClick, playHover } from '@/hooks/useSoundEffects';
 import { useLenis } from 'lenis/react';
 import SoundToggle from './SoundToggle';
-import { gsap, ScrollTrigger } from '@/lib/gsap';
+import { gsap } from '@/lib/gsap';
 import { useGSAPContext } from '@/hooks/useGSAPContext';
 
 const links = [
@@ -21,47 +21,12 @@ const Navbar = () => {
   const lenis = useLenis();
   const navRef = useRef<HTMLElement>(null);
 
-  // GSAP: hide navbar on scroll down, reveal on scroll up
+  // GSAP: initial entrance animation
   useGSAPContext(
     () => {
       // Delay all Navbar logic until AFTER the loading screen finishes (3 seconds)
       const timer = setTimeout(() => {
-        let lastScrollY = window.scrollY;
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        // Mobile scrolls in shorter bursts — lower threshold
-        const hideThreshold = isMobile ? 50 : 100;
-
-        ScrollTrigger.create({
-          start: 'top -60px',
-          end: 'max',
-          onUpdate: () => {
-            const currentY = window.scrollY;
-            const isScrollingDown =
-              currentY > lastScrollY && currentY > hideThreshold;
-            lastScrollY = currentY;
-
-            if (!navRef.current) return;
-
-            if (isScrollingDown) {
-              // Slide navbar out upward
-              gsap.to(navRef.current, {
-                yPercent: -110,
-                duration: isMobile ? 0.25 : 0.4,
-                ease: 'power2.inOut',
-                overwrite: true,
-              });
-            } else {
-              // Slide navbar back in
-              gsap.to(navRef.current, {
-                yPercent: 0,
-                duration: isMobile ? 0.3 : 0.5,
-                ease: 'power3.out',
-                overwrite: true,
-              });
-            }
-          },
-        });
-
+        if (!navRef.current) return;
         // Initial entrance animation - drops in smoothly right as loader finishes
         gsap.from(navRef.current, {
           y: -60,
