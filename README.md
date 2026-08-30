@@ -7,9 +7,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![ShadcnUI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 
-[**Live Demo**](https://vara-s-portfolio.vercel.app/) • [**Source Code**](https://github.com/rinkinisha/Vara-s--Portfolio) • [**Request Collaboration**](mailto:rinkinisha24@navgurukul.org)
+[**Live Demo**]() • [**Source Code**](https://github.com/rinkinisha/Vara-s--Portfolio) • [**Request Collaboration**](mailto:rinkinisha24@navgurukul.org)
 
 ---
 
