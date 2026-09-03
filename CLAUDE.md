@@ -1,14 +1,14 @@
-# CLAUDE.md — AnisPort Portfolio
+# CLAUDE.md — RinkiPort Portfolio
 
-This file provides context and conventions for AI assistants working on the AnisPort codebase.
+This file provides context and conventions for AI assistants working on the RinkiPort codebase.
 
 ---
 
 ## Project Overview
 
-**AnisPort** is a personal portfolio website built as a single-page application (SPA). It features a neo-brutalist aesthetic with advanced interactive elements: a matrix rain hero animation, an interactive terminal interface, GitHub contribution graph, and WhatsApp-integrated contact form.
+**RinkiPort** is a personal portfolio website built as a single-page application (SPA). It features a neo-brutalist aesthetic with advanced interactive elements: a matrix rain hero animation, an interactive terminal interface, GitHub contribution graph, and WhatsApp-integrated contact form.
 
-The project has **no backend** — it is a purely static, client-side React application suitable for hosting on Vercel, Netlify, or any static host.
+The project has **no backend** — it is a purely static, client-side React application suitable for hosting on Vercel.
 
 ---
 
@@ -215,7 +215,6 @@ npx shadcn@latest add <component-name>
 
 ## Git & Branching
 
-- Main branch: `master`
-- Feature branches: use descriptive names, e.g., `feature/add-blog-section`
+- Main branch: `main`
 - No CI/CD pipeline is currently configured
 - No automated deployment — deployments are manual (e.g., Vercel dashboard or CLI)
